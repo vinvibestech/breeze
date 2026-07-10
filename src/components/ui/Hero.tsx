@@ -1,0 +1,199 @@
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+import FlavorSelector from "./FlavorSelector";
+import { gsap } from "gsap";
+import { flavorData } from "../../data/flavors";
+
+const flavors = [
+    "Strawberry",
+    "Pineapple",
+    "Blueberry",
+    "Orange",
+    "Lemon",
+];
+
+export default function Hero() {
+    type Flavor = keyof typeof flavorData;
+
+    const [active, setActive] = useState<Flavor>("Pineapple");
+    const [isAnimating, setIsAnimating] = useState(false);
+
+    const current = flavorData[active];
+
+    const changeFlavor = (flavor: Flavor) => {
+        if (flavor === active || isAnimating) return;
+
+        setIsAnimating(true);
+
+        const tl = gsap.timeline({
+            defaults: {
+                ease: "power3.out",
+                duration: 0.6,
+            },
+            onComplete: () => setIsAnimating(false),
+        });
+
+        // 1. Animate OUT the currently visible bottle only
+        tl.to(".bottle", {
+            opacity: 0,
+            y: -100,
+            rotate: -30,
+            scale: 0.8,
+            duration: 0.35,
+            ease: "power2.in",
+        });
+
+        // 2. Swap the data + instantly hide the elements that are about
+        //    to show new content, so nothing flashes before its turn
+        tl.add(() => {
+            setActive(flavor);
+
+            gsap.set(".heroTitle", { opacity: 0, y: -10 });
+            gsap.set(".bgImage", { opacity: 0, scale: 1.08 });
+            gsap.set(".cardImage", { opacity: 0, x: 40 });
+            gsap.set(".description", { opacity: 0, y: 20 });
+            gsap.set(".bottle", { opacity: 0, y: -100, rotate: -30, scale: 0.8 });
+        });
+
+        // 3. Background + new bottle animate IN
+        gsap.set(".bgImage", {
+            opacity: 0,
+            scale: 1,
+        });
+
+        tl.to(".bgImage", {
+            opacity: 1,
+            scale: 1,
+            duration: 0.10,
+            ease: "power2.out",
+        });
+
+        // Hero Title (First)
+        gsap.set(".heroTitle", {
+            opacity: 0,
+            y: -10,
+            filter: "blur(8px)",
+        });
+
+        tl.to(".heroTitle", {
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+            duration: 0.9,
+        });
+
+        // Bottle (After Title)
+        gsap.set(".bottle", {
+            opacity: 0,
+            y: 80,
+            scale: 0.9,
+            rotate: 8,
+        });
+
+        tl.to(".bottle", {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            rotate: 12,
+            duration: 0.7,
+            ease: "back.out(1.4)",
+        }, "-=0.2");
+
+
+        // 5. The two images
+        tl.to(".cardImage", {
+            opacity: 1,
+            x: 0,
+            duration: 0.4,
+            stagger: 0.1,
+        });
+
+        // 6. Description, last
+        tl.to(".description", {
+            opacity: 1,
+            y: 0,
+            duration: 0.4,
+        });
+    };
+
+    return (
+        <section className="relative overflow-hidden bg-white min-h-screen h-screen">
+
+            {/* Background */}
+            <Image
+                src={current.bg}
+                fill
+                alt=""
+                className="bgImage object-cover object-bottom"
+            />
+
+            {/* White Overlay */}
+            <div className="absolute inset-0 backdrop-blur-[1px]" />
+
+            <div className="relative z-10 h-full max-w-[1500px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+
+                {/* Top */}
+                <div className="z-50 flex flex-col md:flex-row justify-between items-center md:items-start pt-6 sm:pt-8 md:pt-10 gap-4 md:gap-0">
+
+                    <FlavorSelector
+                        active={active}
+                        setActive={changeFlavor}
+                        flavors={flavors}
+                    />
+
+                    <div className="w-[100%] sm:w-[55%] md:w-[280px] lg:w-[330px] xl:w-[370px]">
+
+                        <div className="flex gap-1.5 sm:gap-2 md:gap-4 w-full">
+
+                            <div className="relative flex-[3] aspect-[16/9] sm:aspect-[3/2] rounded-xl md:rounded-3xl overflow-hidden">
+                                <Image
+                                    src={current.img1}
+                                    fill
+                                    alt=""
+                                    className="cardImage object-cover"
+                                />
+                            </div>
+
+                            <div className="relative flex-[2] aspect-[16/9] sm:aspect-[3/2] rounded-xl md:rounded-3xl overflow-hidden">
+                                <Image
+                                    src={current.img2}
+                                    fill
+                                    alt=""
+                                    className="cardImage object-cover"
+                                />
+                            </div>
+
+                        </div>
+
+                        <p className="mt-2 sm:mt-4 md:mt-5 text-[11px] sm:text-base text-gray-700 leading-5 sm:leading-7 md:leading-8 description">
+                            {current.description}
+                        </p>
+
+                    </div>
+
+                </div>
+
+                {/* Middle */}
+                <div className="absolute inset-0 flex items-center mt-30 md:mt-0 justify-center pointer-events-none px-2">
+                    <h1 className="heroTitle text-[17vw] sm:text-[16vw] md:text-[17vw] lg:text-[18vw] xl:text-[220px] font-black uppercase tracking-tight text-black text-center leading-none whitespace-nowrap">
+                        {current.title}
+                    </h1>
+                </div>
+
+                {/* Bottle */}
+                <div className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 w-[80vw] sm:w-[45vw] md:w-[400px] lg:w-[520px] xl:w-[650px]">
+                    <Image
+                        src={current.bottle}
+                        width={650}
+                        height={600}
+                        alt=""
+                        className="bottle rotate-12 w-full h-auto mt-30 md:mt-0"
+                    />
+                </div>
+
+            </div>
+        </section>
+    );
+}
