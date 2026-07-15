@@ -49,9 +49,10 @@ export default function Navbar() {
     return (
         <>
             <header
+             id="navbar"
                 className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ${scrolled
                     ? "bg-white/90 backdrop-blur-md shadow-sm"
-                    : "bg-transparent"
+                    : "bg-transparent bg-[#FDFDFD]"
                     }`}
             >
                 <div
@@ -127,6 +128,7 @@ export default function Navbar() {
                     <nav className="flex flex-col items-center gap-6">
                         {navLinks.map((item) => (
                             <Link
+                                onClick={() => setMenuOpen(!menuOpen)}
                                 key={item.id}
                                 href={item.href}
                                 className="text-[16px] xl:text-[18px] uppercase text-[#333] hover:text-pink-600 transition"
@@ -138,7 +140,7 @@ export default function Navbar() {
                         <Link
                             href="/contact"
                             onClick={() => setMenuOpen(false)}
-                            className="mt-2 rounded-full border border-[#333333] px-8 py-3 uppercase text-[#333333] transition hover:bg-[#333333] hover:text-white"
+                            className="mt-2 rounded-full border border-[#333333] px-8 py-3 uppercase text-[#333333] transition hover:bg-[#E21175] hover:border-[#E21175] hover:text-white"
                         >
                             Contact Us
                         </Link>

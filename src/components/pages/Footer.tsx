@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <section
             className="relative overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: "url('/footer.png')" }}
+            style={{ backgroundImage: "url('/hero/footer1.png')" }}
         >
 
             <div className="relative z-10 mx-auto flex min-h-[600px] w-[92%] max-w-[1600px] flex-col py-16 lg:flex-row lg:items-center lg:justify-start lg:gap-40">
@@ -28,15 +28,15 @@ export default function Footer() {
                         className="mb-7"
                     />
 
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-4 font-semibold uppercase tracking-tight text-[#333333]">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-4 font-semibold uppercase tracking-tight text-black">
                         STAY REFRESHED.
                     </h2>
 
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold uppercase tracking-tight text-[#333333]">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold uppercase tracking-tight text-black">
                         GET EXCLUSIVE OFFERS
                     </h2>
 
-                    <p className="mx-auto mt-6 max-w-3xl text-sm font-normal leading-7 text-[#605F5F] sm:mt-8 sm:text-base sm:leading-8 md:text-lg">
+                    <p className="mx-auto mt-6 max-w-3xl text-sm font-normal leading-7 text-black sm:mt-8 sm:text-base sm:leading-8 md:text-lg">
                         Be the first to discover new flavours,
                         seasonal launches, exclusive offers,
                         and exciting updates from Breeze.

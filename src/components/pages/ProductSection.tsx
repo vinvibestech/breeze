@@ -48,7 +48,7 @@ export default function ProductSection() {
           <div className="flex justify-center lg:justify-end">
             <div className="overflow-hidden rounded-3xl ">
               <Image
-                src="/namlet.png"
+                src="/hero/namlet.jpeg"
                 alt="Namlet Bottle"
                 width={520}
                 height={620}
@@ -62,7 +62,7 @@ export default function ProductSection() {
         {/* Flavour Image */}
         <div className="mt-20 overflow-hidden rounded-[32px]">
           <Image
-            src="/namletfull.png"
+            src="/hero/all-namlet.jpeg"
             alt="Namlet Flavours"
             width={1400}
             height={650}

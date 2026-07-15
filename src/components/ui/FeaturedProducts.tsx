@@ -8,43 +8,75 @@ const products = [
   {
     name: "PINEAPPLE",
     size: "300 ML",
-    image: "/image-removebg-preview (2).png",
+    image: "/pineapple.png",
     color: "#FFE8A6",
-    desc: "Tropical fizz in every sip.",
-    price: "Dhs. 4.00",
+    desc: "Sweet tropical sunshine to sip.",
   },
   {
     name: "ORANGE",
     size: "300 ML",
-    image: "/image-removebg-preview (3).png",
+    image: "/orange1.png",
     color: "#FFD99A",
-    desc: "Refreshing citrus sparkle.",
-    price: "Dhs. 4.00",
+    desc: "Tangy citrus burst of joy.",
   },
   {
     name: "MINT LEMON",
     size: "300 ML",
-    image: "/",
-    color: "#DDF0B7",
-    desc: "Cool, crisp, and refreshing.",
-    price: "Dhs. 4.00",
+    image: "/mint lemon.png",
+    color: "#E2F1C4",
+    desc: "Cool refreshing breeze every time.",
   },
   {
     name: "TAMARIND",
     size: "300 ML",
-    image: "/",
+    image: "/tamarind.png",
     color: "#F8E7D9",
-    desc: "Tangy tamarind refreshment.",
-    price: "Dhs. 4.00",
+    desc: "Bold sweet and sour thrill.",
+  },
+  {
+    name: "STRAWBERRY",
+    size: "300 ML",
+    image: "/strawberry.png",
+    color: "#fccac1",
+    desc: "Luscious sweet red berry bliss.",
+  },
+  {
+    name: "MANGO",
+    size: "300 ML",
+    image: "/mango.png",
+    color: "#ffdca8",
+    desc: "Pure juicy liquid summer gold.",
+  },
+  {
+    name: "JEERA",
+    size: "300 ML",
+    image: "/jeera.png",
+    color: "#f0d1aa",
+    desc: "Crisp, refreshing, earthy, spiced kick.",
   },
   {
     name: "ROSE",
     size: "300 ML",
-    image: "/",
+    image: "/panineer.png",
     color: "#F8DDE4",
-    desc: "Sweet floral refreshment.",
-    price: "Dhs. 4.00",
+    desc: "Delicate floral magic to drink.",
   },
+
+  {
+    name: "LEMON",
+    size: "300 ML",
+    image: "/lemon.png",
+    color: "#FDECAB",
+    desc: "Bright sunny zest for you.",
+  },
+  {
+    name: "GINGER",
+    size: "300 ML",
+    image: "/ginger.png",
+    color: "#F4CF9D",
+    desc: "Bold spicy kick of flavor.",
+  },
+
 ];
 
 export default function FeaturedProducts() {
@@ -85,8 +117,8 @@ export default function FeaturedProducts() {
       window.innerWidth < 640
         ? 260
         : window.innerWidth < 1024
-        ? 320
-        : 380;
+          ? 320
+          : 380;
 
     sliderRef.current.scrollBy({
       left: direction === "right" ? scrollAmount : -scrollAmount,
@@ -139,8 +171,8 @@ export default function FeaturedProducts() {
                     src={item.image}
                     alt={item.name}
                     width={250}
-                    height={320}
-                    className="relative z-10 w-[150px] sm:w-[180px] md:w-[210px] lg:w-[250px] h-auto"
+                    height={300}
+                    className="relative z-10 w-[150px] sm:w-[180px] md:w-[210px] lg:w-[200px] h-auto"
                   />
 
                   <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 h-5 rounded-full bg-black/25 blur-md"></div>
@@ -149,13 +181,9 @@ export default function FeaturedProducts() {
 
               {/* Bottom */}
               <div className="flex justify-between items-end gap-4">
-                <p className="max-w-[150px] sm:max-w-[170px] text-xs sm:text-sm lg:text-base text-[#605F5F] leading-relaxed">
+                <p className="max-w-[200px] sm:max-w-full text-xs sm:text-sm lg:text-base text-[#605F5F] leading-relaxed">
                   {item.desc}
                 </p>
-
-                <span className="whitespace-nowrap text-base sm:text-lg lg:text-xl font-medium text-[#333333]">
-                  {item.price}
-                </span>
               </div>
             </div>
           ))}
@@ -167,11 +195,10 @@ export default function FeaturedProducts() {
           <button
             onClick={() => scroll("left")}
             disabled={!canScrollLeft}
-            className={`w-11 h-11 sm:w-14 sm:h-14 lg:w-14 lg:h-14 rounded-full border flex items-center justify-center transition-all duration-300 ${
-              canScrollLeft
+            className={`w-11 h-11 sm:w-14 sm:h-14 lg:w-14 lg:h-14 rounded-full border flex items-center justify-center transition-all duration-300 ${canScrollLeft
                 ? "bg-[#E21175] text-white border-[#E21175] hover:scale-105"
                 : "bg-white text-black border-black"
-            }`}
+              }`}
           >
             <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7" />
           </button>
@@ -180,11 +207,10 @@ export default function FeaturedProducts() {
           <button
             onClick={() => scroll("right")}
             disabled={!canScrollRight}
-            className={`w-11 h-11 sm:w-14 sm:h-14 lg:w-14 lg:h-14 rounded-full border flex items-center justify-center transition-all duration-300 ${
-              canScrollRight
+            className={`cursor-pointer w-11 h-11 sm:w-14 sm:h-14 lg:w-14 lg:h-14 rounded-full border flex items-center justify-center transition-all duration-300 ${canScrollRight
                 ? "bg-[#E21175] border-[#E21175] text-white bg-[#E21175] hover:scale-105"
                 : "bg-white text-black border-[#333333]"
-            }`}
+              }`}
           >
             <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7" />
           </button>

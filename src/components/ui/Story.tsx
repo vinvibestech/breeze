@@ -28,9 +28,11 @@ export default function Story() {
                True craftsmanship lies in simplicity. Our specialty Goli Soda delivers bright, clean fruit profiles and a sharp, refreshing fizz that redefines traditional carbonated drinks.
               </p>
 
-              <button className="mt-6 rounded-full border border-[#333333] uppercase px-6 py-3 text-sm font-normal text-[#333333] transition-all duration-300 hover:bg-[#E21175] hover:border-[#E21175] hover:text-white sm:mt-8 sm:px-8 sm:py-3.5 sm:text-base md:mt-10 md:px-10 md:py-4 md:text-lg">
+            <a href="about">
+                <button className="cursor-pointer mt-6 rounded-full border border-[#333333] uppercase px-6 py-3 text-sm font-normal text-[#333333] transition-all duration-300 hover:bg-[#E21175] hover:border-[#E21175] hover:text-white sm:mt-8 sm:px-8 sm:py-3.5 sm:text-base md:mt-10 md:px-10 md:py-4 md:text-lg">
                 Our Story
               </button>
+            </a>
             </div>
           </div>
         </div>

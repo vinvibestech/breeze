@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${oswald.className}`} >
+      <body className={`${oswald.variable} ${oswald.className}`} cz-shortcut-listen="true">
           <Navbar />
         {children}
       </body>

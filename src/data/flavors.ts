@@ -4,55 +4,55 @@ export const flavorData = {
   Pineapple: {
     id:1,
     title: "PINEAPPLE",
-    bottle: "/image-removebg-preview (2).png",
-    bg: "/image.png",
-    img1: "/image copy 2.png",
-    img2: "/image copy.png",
+    bottle: "/pineapple.png",
+    bg: "/hero/pineapple bg.jpg",
+    img1: "/hero/side11.png",
+    img2: "/hero/side13.png",
     description:
-      "Crafted to bring back the timeless taste of traditional Codd Neck Soda.",
+      "A tropical explosion of juicy, golden pineapple that delivers a beautifully crisp, refreshing island vibe.",
   },
 
   Strawberry: {
     id:2,
     title: "STRAWBERRY",
-    bottle: "/image-removebg-preview (3).png",
-    bg: "/image copy 3.png",
-    img1: "/strawberry1.jpg",
-    img2: "/strawberry2.jpg",
+    bottle: "/strawberry.png",
+    bg: "/hero/strawberry bg.jpg",
+    img1: "/hero/side3.jpeg",
+    img2: "/hero/side4.jpeg",
     description:
-      "Fresh strawberry flavour with sparkling fizz.",
+      "Sweet, sun-ripened strawberries meet a sharp, nostalgic fizz for the ultimate vibrant berry escape.",
   },
 
-  Blueberry: {
+  Mango: {
     id:3,
-    title: "BLUEBERRY",
-    bottle: "/",
-    bg: "/bg/blueberry.jpg",
-    img1: "/blue1.jpg",
-    img2: "/blue2.jpg",
+    title: "MANGO",
+    bottle: "/mango.png",
+    bg: "/hero/mango bg.jpg",
+    img1: "/hero/side5.jpeg",
+    img2: "/hero/side6.jpeg",
     description:
-      "Blueberry goodness in every sip.",
+      "Rich, luscious king of mangos blended perfectly to create a smooth, velvety tropical carbonated dream.",
   },
 
   Orange: {
     id:4,
     title: "ORANGE",
-    bottle: "/",
-    bg: "/bg/orange.jpg",
-    img1: "/orange1.jpg",
-    img2: "/orange2.jpg",
+    bottle: "/orange1.png",
+    bg: "/hero/orange bg.jpg",
+    img1: "/hero/side7.jpeg",
+    img2: "/hero/side8.jpeg",
     description:
-      "Classic orange soda with refreshing bubbles.",
+      "Bursting with bright, zesty citrus oils that unleash an intensely refreshing shock to your senses.",
   },
 
   Lemon: {
     id:5,
     title: "LEMON",
-    bottle: "/",
-    bg: "/bg/lemon.jpg",
-    img1: "/lemon1.jpg",
-    img2: "/lemon2.jpg",
+    bottle: "/lemon.png",
+    bg: "/hero/lemon bg.jpg",
+    img1: "/hero/side10.jpeg",
+    img2: "/hero/images2.jpeg",
     description:
-      "Refreshing lemon fizz with a tangy twist.",
+      "Exploding with sharp, tangy lemon notes that deliver a perfectly crisp punch to your palate.",
   },
 };

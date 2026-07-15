@@ -1,7 +1,7 @@
 export const Blogflavors = [
     {
         id: 1,
-        image: "/footer.png",
+        image: "/hero/blog1.jpeg",
         bg: "from-[#FFF3D8] to-[#FCE9B4]",
         shortDescription:
             "The Physics of Fizz: How a 150-Year-Old Glass Marvel Keeps Breeze Goli Soda Perfectly Carbonated",
@@ -20,7 +20,7 @@ When you push down on the marble, it drops into a specially designed chamber wit
     },
     {
         id: 2,
-        image: "/images/flavors/orange.jpg",
+        image: "/hero/blog2.jpeg",
         bg: "from-[#FFE9CC] to-[#FFDCA8]",
         shortDescription:
             "Savor the Flavors, Make the Memories: Which Breeze Goli Soda Matches Your Mood?",
@@ -53,7 +53,7 @@ Regardless of your choice, our blend of premium ingredients and purified RO wate
     },
     {
         id: 3,
-        image: "/images/flavors/mango.jpg",
+        image: "/hero/blog3.jpeg",
         bg: "from-[#EEF8DB] to-[#D9F0B6]",
         shortDescription:
             "Elevate Your Next Gathering: Why Breeze Goli Soda is the Ultimate Interactive Mocktail Trend",
@@ -74,7 +74,7 @@ Are you a cafe owner, restaurateur, event planner, or distributor in the Emirate
     },
     {
         id: 4,
-        image: "/images/flavors/tamarind.jpg",
+        image: "/hero/blog4.jpeg",
         bg: "from-[#F6E8D8] to-[#F0DFCE]",
         shortDescription:
             "The Global Resurgence: How India’s Iconic Street-Side Treasure Conquered the UAE Food Scene",
@@ -90,7 +90,7 @@ Breeze Soft Drinks is at the forefront of the UAE’s vibrant, multicultural cul
     },
     {
         id: 5,
-        image: "/images/flavors/tamarind.jpg",
+        image: "/hero/blog5.jpeg",
         bg: "from-[#E7E6FB] to-[#D8D6F3]",
         shortDescription:
             "Behind the Glass: The Advanced European Standard Powering Breeze Soft Drinks",
@@ -113,7 +113,7 @@ From Blueberry Bliss to Mango Marvel, our process guarantees that every beverage
     },
     {
         id: 6,
-        image: "/images/flavors/tamarind.jpg",
+        image: "/hero/blog6.jpeg",
         bg: "from-[#E4EEFF] to-[#D0E0FF]",
         shortDescription:
             "Namlet: Where Vintage Beverage Heritage Meets Modern UAE Luxury",

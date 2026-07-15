@@ -7,9 +7,9 @@ import { gsap } from "gsap";
 import { flavorData } from "../../data/flavors";
 
 const flavors = [
+     "Pineapple",
     "Strawberry",
-    "Pineapple",
-    "Blueberry",
+    "Mango",
     "Orange",
     "Lemon",
 ];
@@ -147,7 +147,7 @@ export default function Hero() {
 
                         <div className="flex gap-1.5 sm:gap-2 md:gap-4 w-full">
 
-                            <div className="relative flex-[3] aspect-[16/9] sm:aspect-[3/2] rounded-xl md:rounded-3xl overflow-hidden">
+                            <div className="relative flex-[2] aspect-[16/13] sm:aspect-[2/2] rounded-xl md:rounded-3xl overflow-hidden">
                                 <Image
                                     src={current.img1}
                                     fill
@@ -156,7 +156,7 @@ export default function Hero() {
                                 />
                             </div>
 
-                            <div className="relative flex-[2] aspect-[16/9] sm:aspect-[3/2] rounded-xl md:rounded-3xl overflow-hidden">
+                            <div className="relative flex-[2] aspect-[16/9] sm:aspect-[2/2] rounded-xl md:rounded-3xl overflow-hidden">
                                 <Image
                                     src={current.img2}
                                     fill
@@ -167,7 +167,7 @@ export default function Hero() {
 
                         </div>
 
-                        <p className="mt-2 sm:mt-4 md:mt-5 text-[11px] sm:text-base text-gray-700 leading-5 sm:leading-7 md:leading-8 description">
+                        <p className="mt-2 sm:mt-4 md:mt-2 text-[11px] sm:text-base text-gray-700 leading-5 sm:leading-7 md:leading-8 description">
                             {current.description}
                         </p>
 
@@ -176,18 +176,18 @@ export default function Hero() {
                 </div>
 
                 {/* Middle */}
-                <div className="absolute inset-0 flex items-center mt-30 md:mt-0 justify-center pointer-events-none px-2">
+                <div className="absolute inset-0 flex items-center mt-45 md:mt-0 justify-center pointer-events-none px-2">
                     <h1 className="heroTitle text-[17vw] sm:text-[16vw] md:text-[17vw] lg:text-[18vw] xl:text-[220px] font-black uppercase tracking-tight text-black text-center leading-none whitespace-nowrap">
                         {current.title}
                     </h1>
                 </div>
 
                 {/* Bottle */}
-                <div className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 w-[80vw] sm:w-[45vw] md:w-[400px] lg:w-[520px] xl:w-[650px]">
+                <div className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 w-[50vw] mt-10 md:mt-0 sm:w-[35vw] md:w-[300px] lg:w-[320px] xl:w-[400px]">
                     <Image
                         src={current.bottle}
                         width={650}
-                        height={600}
+                        height={500}
                         alt=""
                         className="bottle rotate-12 w-full h-auto mt-30 md:mt-0"
                     />

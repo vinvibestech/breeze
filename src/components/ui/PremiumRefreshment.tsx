@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const gallery = [
   {
-    src: "/per2.png",
+    src: "/hero/home-namlet.jpeg",
     alt: "Drink 1",
   },
   {
-    src: "/per.png",
+    src: "/hero/home-namlet1.jpeg",
     alt: "Drink 2",
   },
   {
-    src: "/per3.png",
+    src: "/hero/home-namlet2.jpeg",
     alt: "Drink 3",
   },
 ];
@@ -32,13 +32,15 @@ export default function PremiumRefreshment() {
             </p>
 
             <p className="mt-6 sm:mt-8 text-base sm:text-lg leading-7 sm:leading-8 font-normal text-[#605F5F] max-w-3xl">
-         We invite you to explore a whole new side of refreshment. Welcome to the world of Namlet an exclusive, premium collection where vintage architecture meets contemporary taste. Driven by a passion to revive the legendary charm of the iconic glass marble bottle, we’ve crafted an elevated soda experience that honours raw nostalgia while satisfying the modern craving for unique, clean flavours.
+              We invite you to explore a whole new side of refreshment. Welcome to the world of Namlet an exclusive, premium collection where vintage architecture meets contemporary taste. Driven by a passion to revive the legendary charm of the iconic glass marble bottle, we’ve crafted an elevated soda experience that honours raw nostalgia while satisfying the modern craving for unique, clean flavours.
 
             </p>
+            <a href="/premium-product">
+              <button className="cursor-pointer mt-8 rounded-full border border-[#333333] uppercase px-6 py-3 text-sm sm:px-8 sm:text-base lg:px-10 lg:py-4 lg:text-lg font-normal text-[#333333] transition-all duration-300 hover:bg-[#E21175] hover:border-[#E21175] hover:text-white">
+                Premium Product
+              </button>
+            </a>
 
-            <button className="mt-8 rounded-full border border-[#333333] uppercase px-6 py-3 text-sm sm:px-8 sm:text-base lg:px-10 lg:py-4 lg:text-lg font-normal text-[#333333] transition-all duration-300 hover:bg-[#E21175] hover:border-[#E21175] hover:text-white">
-              Premium Product
-            </button>
           </div>
 
           {/* Right Images */}
