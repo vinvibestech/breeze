@@ -8,7 +8,7 @@ import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-type Device = "desktop" | "tablet" | "mobile" | "laptop";
+type Device = "desktop" | "tablet" | "mobile" | "laptop" | "Mmobile" | "Smobile";
 
 const storyPoints = [
   {
@@ -17,52 +17,64 @@ const storyPoints = [
     laptop: { left: "2%", top: "35%" },
     tablet: { left: "6%", top: "35%" },
     mobile: { left: "6%", top: "40%" },
+    Mmobile: { left: "6%", top: "40%" },
+    Smobile: { left: "6%", top: "40%" },
     title: "THE LAST STAND OF THE VINTAGE POP.",
     description: "While the world transitioned to disposable cans and twisting plastic caps, one icon held its ground. It is the definitive tactile ritual of carbonation—a heavy glass relic that turns the simple act of opening a drink into an echoing statement of heritage, craftsmanship, and pure, unfiltered chill.",
   },
   {
     id: 2,
-    
-  desktop: { left: "100%", top: "65%" },
-  laptop: { left: "110%", top: "67%" },
+
+    desktop: { left: "100%", top: "65%" },
+    laptop: { left: "110%", top: "67%" },
     tablet: { left: "145%", top: "65%" },
     mobile: { left: "280%", top: "65%" },
+    Mmobile: { left: "300%", top: "65%" },
+    Smobile: { left: "345%", top: "65%" },
     title: "THE GENIUS OF 1872.",
     description: "The soul of Goli Soda lies in its mechanics, invented and patented by English engineer Hiram Codd in 1872. Seeking a way to seal fizzy drinks without using corks, he designed a revolutionary globe-stoppered system that changed beverage bottling forever.",
   },
   {
     id: 3,
-   desktop: { left: "185%", top: "65%" },
-   laptop: { left: "200%", top: "67%" },
+    desktop: { left: "185%", top: "65%" },
+    laptop: { left: "200%", top: "67%" },
     tablet: { left: "280%", top: "65%" },
     mobile: { left: "520%", top: "65%" },
+    Mmobile: { left: "580%", top: "65%" },
+    Smobile: { left: "680%", top: "65%" },
     title: "SCIENCE ENCLOSED IN GLASS.",
     description: "A Goli Soda bottle or Codd-neck bottle is a marvel of physics. Filled upside down under extreme gas pressure, a glass marble is forced upward against a tight rubber washer, naturally locking in the sharp carbonation without any artificial caps.",
   },
   {
     id: 4,
-      desktop: { left: "270%", top: "55%" },
-      laptop: { left: "315%", top: "57%" },
+    desktop: { left: "270%", top: "55%" },
+    laptop: { left: "315%", top: "57%" },
     tablet: { left: "425%", top: "60%" },
     mobile: { left: "800%", top: "60%" },
+    Mmobile: { left: "870%", top: "63%" },
+    Smobile: { left: "1020%", top: "63%" },
     title: "THE BOTTLE THAT CONQUERED THE OCEANS.",
     description: "Launched in 1872, the Codd-neck design instantly went global, dominating the soft-drink and brewing industries from Europe to Australasia. While industrial steel caps eventually replaced them in the West, the design found an eternal home in the East. Japan adopted it entirely, transforming this Victorian marvel into Ramune—their iconic national marble soda.",
   },
   {
     id: 5,
-      desktop: { left: "357%", top: "75%" },
-      laptop: { left: "420%", top: "75%" },
+    desktop: { left: "357%", top: "75%" },
+    laptop: { left: "420%", top: "75%" },
     tablet: { left: "580%", top: "75%" },
     mobile: { left: "1035%", top: "75%" },
+    Mmobile: { left: "1180%", top: "75%" },
+    Smobile: { left: "1380%", top: "75%" },
     title: "THE REFRESHMENT OF THE PEOPLE.",
     description: "From children breaking the bottles just to collect the shiny marbles to exhausted workers seeking a sharp midday chill from street-side carts, Goli Soda belongs to everyone. It has become an enduring cultural icon of social gatherings and simpler times. ",
   },
   {
     id: 6,
-     desktop: { left: "440%", top: "65%" },
-     laptop: { left: "525%", top: "67%" },
+    desktop: { left: "440%", top: "65%" },
+    laptop: { left: "525%", top: "67%" },
     tablet: { left: "720%", top: "65%" },
     mobile: { left: "1280%", top: "65%" },
+    Mmobile: { left: "1450%", top: "65%" },
+    Smobile: { left: "1690%", top: "65%" },
     title: "THE GLOBAL RESURGENCE.",
     description: "After nearly disappearing under the shadow of multinational giants, Goli Soda is making a premium comeback. Reimagined with gourmet, natural flavors and exported globally to the US, UK, and Gulf markets, India’s authentic street-side treasure is officially capturing the global stage.",
   },
@@ -76,15 +88,19 @@ export default function HorizontalScrollStory() {
 
   useEffect(() => {
     const update = () => {
-      if (window.innerWidth < 640) {
+      if (window.innerWidth <= 320) {
+        setDevice("Smobile");
+      } else if (window.innerWidth <= 375) {
+        setDevice("Mmobile");
+      } else if (window.innerWidth < 640) {
         setDevice("mobile");
       } else if (window.innerWidth < 1024) {
         setDevice("tablet");
-          } else if (window.innerWidth == 1024) {
-      setDevice("laptop");
-    } else {
-      setDevice("desktop");
-    }
+      } else if (window.innerWidth == 1024) {
+        setDevice("laptop");
+      } else {
+        setDevice("desktop");
+      }
     };
 
     update();
@@ -175,7 +191,7 @@ export default function HorizontalScrollStory() {
       <div ref={trackRef} className="relative h-full will-change-transform">
 
         <Image
-          src="/AGENTS.jpeg"
+          src="/story all1.jpg"
           alt="Story"
           width={9222}
           height={300}
@@ -186,13 +202,12 @@ export default function HorizontalScrollStory() {
         {storyPoints.map((item) => (
           <div
             key={item.id}
-              className={`
+            className={`
     story-text absolute px-2 text-white
-    ${
-      item.id === 5
-        ? "w-[680px] sm:w-[550px] md:w-[650px] lg:w-[900px] xl:w-[1000px] text-center"
-        : "w-[400px] sm:w-[300px] md:w-[380px] lg:w-[450px] xl:w-[500px]"
-    }
+    ${item.id === 5
+                ? "w-[680px] sm:w-[550px] md:w-[650px] lg:w-[900px] xl:w-[1000px] text-center"
+                : "w-[400px] sm:w-[300px] md:w-[380px] lg:w-[450px] xl:w-[500px]"
+              }
   `}
             style={{
               left: item[device].left,

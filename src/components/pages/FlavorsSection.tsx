@@ -114,7 +114,7 @@ function FlavorModal({
             {/* Panel */}
             <div className="relative flex max-h-[85vh] w-full max-w-2xl flex-col overflow-hidden rounded-[28px] bg-white  animate-[modalIn_0.25s_ease-out]">
                 <div className={`relative flex-none bg-gradient-to-b`}>
-               
+
 
                     <button
                         type="button"
@@ -140,14 +140,14 @@ function FlavorModal({
                 </div>
 
                 <div className="overflow-y-auto px-7 py-7 sm:px-6 sm:py-6">
-                          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[20px]">
-                                <Image
-                                    src={flavor.image}
-                                    alt="Flavor"
-                                    fill
-                                    className="object-cover "
-                                />
-                            </div>
+                    <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[20px]">
+                        <Image
+                            src={flavor.image}
+                            alt="Flavor"
+                            fill
+                            className="object-cover "
+                        />
+                    </div>
                     <h3
                         id="flavor-modal-title"
                         className="my-6 space-y-6 text-[15px] leading-8 text-[#333333] md:text-lg"
@@ -155,7 +155,7 @@ function FlavorModal({
                         {flavor.shortDescription}
                     </h3>
 
-                    <DescriptionBody  text={flavor.fullDescription} />
+                    <DescriptionBody text={flavor.fullDescription} />
                 </div>
             </div>
 
@@ -187,7 +187,7 @@ export default function FlavorsSection() {
     const [activeFlavor, setActiveFlavor] = useState<Flavor | null>(null);
 
     return (
-        <section className="py-14 bg-white">
+        <section className="pb-18 bg-white">
             <div className="mx-auto w-[92%]">
                 <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
                     {Blogflavors.map((item) => (

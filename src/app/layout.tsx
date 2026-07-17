@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/pages/Navbar";
+import WhatsAppButton from "../components/ui/WhatsAppButton";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${oswald.variable} ${oswald.className}`} cz-shortcut-listen="true">
           <Navbar />
         {children}
+          <WhatsAppButton />
       </body>
     </html>
   );

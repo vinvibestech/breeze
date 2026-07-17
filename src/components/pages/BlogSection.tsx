@@ -22,32 +22,8 @@ export default function BlogSection() {
               makes every sip a memorable experience.
             </p>
           </div>
-
-          {/* Right Images */}
-          <div className="flex justify-center lg:justify-end items-end gap-4">
-
-            <div className="relative h-64 w-44 overflow-hidden rounded-2xl">
-              <Image
-                src="/images/blog/top1.jpg"
-                alt=""
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="relative h-52 w-40 overflow-hidden rounded-2xl">
-              <Image
-                src="/images/blog/top2.jpg"
-                alt=""
-                fill
-                className="object-cover"
-              />
-            </div>
-
-          </div>
         </div>
 
-       
       </div>
     </section>
   );
