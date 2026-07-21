@@ -66,7 +66,7 @@ export default function Hero() {
         tl.to(".bgImage", {
             opacity: 1,
             scale: 1,
-            duration: 0.10,
+            duration: 0.09,
             ease: "power2.out",
         });
 

@@ -11,8 +11,67 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Breeze",
-  description: "Namlet Soft Drinks",
+  metadataBase: new URL("https://yourdomain.com"), // Change this
+
+  title: {
+    default: "Breeze Soft Drinks",
+    template: "%s | Breeze Soft Drinks",
+  },
+
+  description:
+    "Breeze Soft Drinks offers premium beverages and traditional Goli Soda with refreshing flavours.",
+
+  keywords: [
+    "Breeze",
+    "Namlet",
+    "Soft Drinks",
+    "Goli Soda",
+    "UAE",
+    "Premium Beverages",
+    "Refreshing Drinks",
+  ],
+
+  authors: [{ name: "Breeze Soft Drinks" }],
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "Breeze Soft Drinks",
+    description:
+      "Premium soft drinks and traditional Goli Soda from the UAE.",
+    url: "https://yourdomain.com",
+    siteName: "Breeze Soft Drinks",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Breeze Soft Drinks",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Breeze Soft Drinks",
+    description: "Premium beverages from Breeze.",
+    images: ["/og-image.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -22,10 +81,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${oswald.className}`} cz-shortcut-listen="true">
-          <Navbar />
+      <body className={`${oswald.variable} ${oswald.className}`}>
+        <Navbar />
         {children}
-          <WhatsAppButton />
+        <WhatsAppButton />
       </body>
     </html>
   );
