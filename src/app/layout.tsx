@@ -11,7 +11,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"), // Change this
+  metadataBase: new URL("https://www.breezesoftdrinks.com"), 
 
   title: {
     default: "Breeze Soft Drinks",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Breeze Soft Drinks",
     description:
       "Premium soft drinks and traditional Goli Soda from the UAE.",
-    url: "https://yourdomain.com",
+    url: "https://www.breezesoftdrinks.com",
     siteName: "Breeze Soft Drinks",
     locale: "en_US",
     type: "website",
