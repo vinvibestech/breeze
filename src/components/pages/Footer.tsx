@@ -7,6 +7,26 @@ import {
     FaYoutube,
 } from "react-icons/fa";
 
+const socialLinks = [
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/breeze_softdrinks?igsh=aGRrMzRzbzh3em11",
+  },
+
+  {
+    icon: FaFacebookF,
+    href: "https://www.facebook.com/share/18HuLRb7wZ/?mibextid=wwXIfr",
+  },
+  {
+    icon: FaYoutube,
+    href: "/",
+  },
+    {
+    icon: FaLinkedinIn,
+    href: "/",
+  },
+];
+
 export default function Footer() {
     return (
         <section
@@ -44,10 +64,10 @@ export default function Footer() {
 
                     {/* Social */}
                     <div className="mt-8 flex items-center gap-3 sm:mt-10 sm:gap-5">
-                        {[FaInstagram, FaLinkedinIn, FaFacebookF, FaYoutube].map((Icon, i) => (
+             {socialLinks.map(({ icon: Icon, href }, i) => (
                             <Link
                                 key={i}
-                                href="#"
+                                href={href}
                                 className="flex h-11 w-11 items-center justify-center rounded-full border border-black text-black transition hover:border-[#E21175] hover:bg-[#E21175] hover:text-white sm:h-12 sm:w-12 lg:h-14 lg:w-14"
                             >
                                 <Icon size={20} className="sm:size-6 lg:size-7" />
