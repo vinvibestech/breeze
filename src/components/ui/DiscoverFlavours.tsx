@@ -88,7 +88,7 @@ export default function DiscoverFlavours() {
               {/* Column 1 */}
               <div className="space-y-2">
                 <ImageCard src="/MEMORIES7.png" height="h-[300px]" />
-                <ImageCard src="/MEMORIES2.png" height="h-[320px]" />
+                <ImageCard src="/MEMORIESwhite.png" height="h-[320px]" />
               </div>
 
               {/* Column 2 */}
