@@ -11,7 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.breezesoftdrinks.com/about",
       lastModified: new Date(),
     },
-   
+    {
+      url: "https://www.breezesoftdrinks.com/blog",
+      lastModified: new Date(),
+    },
      {
       url: "https://www.breezesoftdrinks.com/premium-product",
       lastModified: new Date(),
