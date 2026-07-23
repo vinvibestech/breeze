@@ -5,7 +5,7 @@ export const flavorData = {
     id:1,
     title: "PINEAPPLE",
     bottle: "/pineapple.png",
-    bg: "/hero/pineapple bg.jpg",
+    bg: "/new-pineapple-bg.png",
     img1: "/hero/side11.png",
     img2: "/hero/side13.png",
     description:

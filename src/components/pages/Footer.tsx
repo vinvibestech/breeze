@@ -19,7 +19,7 @@ export default function Footer() {
                 <div className="max-w-xl">
                     {/* Logo */}
                     <Image
-                        src="/logos.png"
+                        src="/hero/breeze-logo.png"
                         alt="logos"
                         width={190}
                         height={70}

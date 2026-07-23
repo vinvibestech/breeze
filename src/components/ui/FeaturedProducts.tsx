@@ -15,7 +15,7 @@ const products = [
    {
     name: "ROSE",
     size: "300 ML",
-    image: "/panineer.png",
+    image: "/hero/panineer.png",
     color: "#F8DDE4",
     desc: "Delicate floral magic to drink.",
   },

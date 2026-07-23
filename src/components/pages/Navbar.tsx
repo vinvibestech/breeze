@@ -63,7 +63,7 @@ export default function Navbar() {
                         {/* Logo */}
                         <Link href="/" className="flex items-center">
                             <Image
-                                src="/logos.png"
+                                src="/hero/breeze-logo.png"
                                 alt="Breeze Logo"
                                 width={scrolled ? 110 : 125}
                                 height={60}

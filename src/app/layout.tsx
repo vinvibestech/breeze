@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/hero/breeze-logo.png",
         width: 1200,
         height: 630,
         alt: "Breeze Soft Drinks",
@@ -67,11 +67,17 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
 
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
+icons: {
+  icon: [
+    {
+      url: "/hero/breeze-logo.png",
+      type: "image/png",
+      sizes: "512x512",
+    },
+  ],
+  shortcut: "/hero/breeze-logo.png",
+  apple: "/hero/breeze-logo.png",
+},
 };
 
 export default function RootLayout({
