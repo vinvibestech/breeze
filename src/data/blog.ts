@@ -113,7 +113,7 @@ From Blueberry Bliss to Mango Marvel, our process guarantees that every beverage
     },
     {
         id: 6,
-        image: "/hero/blog6.jpeg",
+        image: "/hero/namlet-blog.png",
        bg: "from-[#F5F5F5] to-[#F5F5F5]",
         shortDescription:
             "Namlet: Where Vintage Beverage Heritage Meets Modern UAE Luxury",

@@ -191,7 +191,7 @@ export default function HorizontalScrollStory() {
       <div ref={trackRef} className="relative h-full will-change-transform">
 
         <Image
-          src="/story all1.jpg"
+          src="/hero/story all.jpg"
           alt="Story"
           width={9222}
           height={300}

@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const gallery = [
   {
-    src: "/hero/home-namlet.jpeg",
+    src: "/hero/namlet2.jpeg",
     alt: "Drink 1",
   },
   {
-    src: "/hero/home-namlet1.jpeg",
+    src: "/hero/namlet1.jpeg",
     alt: "Drink 2",
   },
   {
-    src: "/hero/home-namlet2.jpeg",
+    src: "/hero/namlet3.jpeg",
     alt: "Drink 3",
   },
 ];

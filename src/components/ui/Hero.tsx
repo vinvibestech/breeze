@@ -7,17 +7,17 @@ import { gsap } from "gsap";
 import { flavorData } from "../../data/flavors";
 
 const flavors = [
+     "Lemon",
     "Pineapple",
     "Strawberry",
     "Mango",
-    "Orange",
-    "Lemon",
+    "Orange"
 ];
 
 export default function Hero() {
     type Flavor = keyof typeof flavorData;
 
-    const [active, setActive] = useState<Flavor>("Pineapple");
+    const [active, setActive] = useState<Flavor>("Lemon");
     const [isAnimating, setIsAnimating] = useState(false);
 
     const current = flavorData[active];

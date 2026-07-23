@@ -20,7 +20,7 @@ export default function TagLine() {
                 {/* Right Illustration */}
                 <div className="relative order-1 flex h-[220px] w-full items-center justify-center sm:h-[300px] md:h-[360px] lg:absolute lg:right-0 lg:top-0 lg:order-2 lg:h-full lg:w-[62%]">
                     <img
-                        src="/hero/tagline1.png"
+                        src="/hero/taglineimage.png"
                         alt="Bottle Illustration"
                         className="h-full w-auto object-contain select-none sm:h-[85%] lg:h-[92%]"
                         draggable={false}

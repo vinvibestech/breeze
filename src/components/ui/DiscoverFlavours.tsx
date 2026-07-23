@@ -87,19 +87,19 @@ export default function DiscoverFlavours() {
 
               {/* Column 1 */}
               <div className="space-y-2">
-                <ImageCard src="/MEMORIES1.png" height="h-[300px]" />
+                <ImageCard src="/MEMORIES7.png" height="h-[300px]" />
                 <ImageCard src="/MEMORIES2.png" height="h-[320px]" />
               </div>
 
               {/* Column 2 */}
               <div className="space-y-2">
-                <ImageCard src="/MEMORIES3.png" height="h-[340px]" />
+                <ImageCard src="/MEMORIES9.png" height="h-[340px]" />
                 <ImageCard src="/MEMORIES4.png" height="h-[330px]" />
               </div>
 
               {/* Column 3 */}
               <div className="space-y-2">
-                <ImageCard src="/MEMORIES5.png" height="h-[240px]" />
+                <ImageCard src="/MEMORIES8.png" height="h-[240px]" />
                 <ImageCard src="/MEMORIES6.png" height="h-[260px]" />
               </div>
 

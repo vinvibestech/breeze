@@ -5,12 +5,40 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
 const products = [
+    {
+    name: "LEMON",
+    size: "300 ML",
+    image: "/lemon.png",
+    color: "#FDECAB",
+    desc: "Bright sunny zest for you.",
+  },
+   {
+    name: "ROSE",
+    size: "300 ML",
+    image: "/panineer.png",
+    color: "#F8DDE4",
+    desc: "Delicate floral magic to drink.",
+  },
   {
     name: "PINEAPPLE",
     size: "300 ML",
     image: "/pineapple.png",
     color: "#FFE8A6",
     desc: "Sweet tropical sunshine to sip.",
+  },
+    {
+    name: "MINT LEMON",
+    size: "300 ML",
+    image: "/mint lemon.png",
+    color: "#E2F1C4",
+    desc: "Cool refreshing breeze every time.",
+  },
+    {
+    name: "STRAWBERRY",
+    size: "300 ML",
+    image: "/strawberry.png",
+    color: "#fccac1",
+    desc: "Luscious sweet red berry bliss.",
   },
   {
     name: "ORANGE",
@@ -19,34 +47,7 @@ const products = [
     color: "#FFD99A",
     desc: "Tangy citrus burst of joy.",
   },
-  {
-    name: "MINT LEMON",
-    size: "300 ML",
-    image: "/mint lemon.png",
-    color: "#E2F1C4",
-    desc: "Cool refreshing breeze every time.",
-  },
-  {
-    name: "TAMARIND",
-    size: "300 ML",
-    image: "/tamarind.png",
-    color: "#F8E7D9",
-    desc: "Bold sweet and sour thrill.",
-  },
-  {
-    name: "STRAWBERRY",
-    size: "300 ML",
-    image: "/strawberry.png",
-    color: "#fccac1",
-    desc: "Luscious sweet red berry bliss.",
-  },
-  {
-    name: "MANGO",
-    size: "300 ML",
-    image: "/mango.png",
-    color: "#ffdca8",
-    desc: "Pure juicy liquid summer gold.",
-  },
+
   {
     name: "JEERA",
     size: "300 ML",
@@ -54,27 +55,28 @@ const products = [
     color: "#f0d1aa",
     desc: "Crisp, refreshing, earthy, spiced kick.",
   },
-  {
-    name: "ROSE",
-    size: "300 ML",
-    image: "/panineer.png",
-    color: "#F8DDE4",
-    desc: "Delicate floral magic to drink.",
-  },
 
   {
-    name: "LEMON",
+    name: "MANGO",
     size: "300 ML",
-    image: "/lemon.png",
-    color: "#FDECAB",
-    desc: "Bright sunny zest for you.",
+    image: "/mango.png",
+    color: "#ffdca8",
+    desc: "Pure juicy liquid summer gold.",
   },
+
   {
     name: "GINGER",
     size: "300 ML",
     image: "/ginger.png",
     color: "#F4CF9D",
     desc: "Bold spicy kick of flavor.",
+  },
+    {
+    name: "TAMARIND",
+    size: "300 ML",
+    image: "/tamarind.png",
+    color: "#F8E7D9",
+    desc: "Bold sweet and sour thrill.",
   },
 
 ];
