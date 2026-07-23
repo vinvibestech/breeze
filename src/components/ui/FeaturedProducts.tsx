@@ -19,19 +19,27 @@ const products = [
     color: "#F8DDE4",
     desc: "Delicate floral magic to drink.",
   },
-  {
-    name: "PINEAPPLE",
-    size: "300 ML",
-    image: "/pineapple.png",
-    color: "#FFE8A6",
-    desc: "Sweet tropical sunshine to sip.",
-  },
-    {
+      {
     name: "MINT LEMON",
     size: "300 ML",
     image: "/mint lemon.png",
     color: "#E2F1C4",
     desc: "Cool refreshing breeze every time.",
+  },
+    {
+    name: "BLUEBERRY",
+    size: "300 ML",
+    image: "/blueberry.png",
+    color: "#b0def9",
+    desc: "Sweet blueberry freshness in every sip.",
+  },
+
+    {
+    name: "PINEAPPLE",
+    size: "300 ML",
+    image: "/pineapple.png",
+    color: "#FFE8A6",
+    desc: "Sweet tropical sunshine to sip.",
   },
     {
     name: "STRAWBERRY",

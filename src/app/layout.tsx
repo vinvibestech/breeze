@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/hero/breeze-logo.png",
+        url: "/sitelogo.png",
         width: 1200,
         height: 630,
         alt: "Breeze Soft Drinks",
@@ -70,13 +70,13 @@ export const metadata: Metadata = {
 icons: {
   icon: [
     {
-      url: "/hero/breeze-logo.png",
+      url: "/sitelogo.png",
       type: "image/png",
       sizes: "512x512",
     },
   ],
-  shortcut: "/hero/breeze-logo.png",
-  apple: "/hero/breeze-logo.png",
+  shortcut: "/sitelogo.png",
+  apple: "/sitelogo.png",
 },
 };
 

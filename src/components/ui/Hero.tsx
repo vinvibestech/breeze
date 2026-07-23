@@ -176,13 +176,13 @@ export default function Hero() {
 
                 {/* Middle */}
                 <div className="absolute inset-0 flex items-center mt-5 md:mt-0 justify-center pointer-events-none px-2">
-                    <h1 className="heroTitle text-[17vw] sm:text-[16vw] md:text-[17vw] lg:text-[18vw] xl:text-[220px] font-black uppercase tracking-tight text-black text-center leading-none whitespace-nowrap">
+                    <h1 className="heroTitle text-[17vw] sm:text-[16vw] md:text-[17vw] lg:text-[13vw] xl:text-[13vw] font-black uppercase tracking-tight text-black text-center leading-none whitespace-nowrap">
                         {current.title}
                     </h1>
                 </div>
 
                 {/* Bottle */}
-                <div className="absolute left-1/2 top-[40%] sm:top-[50%] -translate-x-1/2 -translate-y-1/2 w-[50vw] mt-10 md:mt-0 sm:w-[35vw] md:w-[300px] lg:w-[320px] xl:w-[400px]">
+                <div className="absolute left-1/2 top-[40%] sm:top-[50%] -translate-x-1/2 -translate-y-1/2 w-[50vw] mt-10 md:mt-0 sm:w-[35vw] md:w-[300px] lg:w-[300px] xl:w-[400px]">
                     <Image
                         src={current.bottle}
                         width={650}
