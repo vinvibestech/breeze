@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://breezesoftdrinks.com/sitemap.xml",
+    sitemap: "https://www.breezesoftdrinks.com/sitemap.xml",
   };
 }

@@ -3,24 +3,24 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://breezesoftdrinks.com/",
+      url: "https://www.breezesoftdrinks.com/",
       lastModified: new Date(),
       priority: 1,
     },
     {
-      url: "https://breezesoftdrinks.com/about",
+      url: "https://www.breezesoftdrinks.com/about",
       lastModified: new Date(),
     },
     {
-      url: "https://breezesoftdrinks.com/blog",
+      url: "https://www.breezesoftdrinks.com/blog",
       lastModified: new Date(),
     },
      {
-      url: "https://breezesoftdrinks.com/premium-product",
+      url: "https://www.breezesoftdrinks.com/premium-product",
       lastModified: new Date(),
     },
     {
-      url: "https://breezesoftdrinks.com/contact",
+      url: "https://www.breezesoftdrinks.com/contact",
       lastModified: new Date(),
     },
   ];
